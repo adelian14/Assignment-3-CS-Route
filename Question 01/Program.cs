@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.Write("Enter a number: ");
+            int n = int.Parse(Console.ReadLine());
+            if (n%3 == 0 && n%4 == 0) {
+                Console.WriteLine("Yes");
+            }
+            else
+            {
+                Console.WriteLine("No");
+            }
         }
     }
 }
